@@ -21,7 +21,7 @@ require("presence").setup({
 	-- Configure Rich Presence button(s), either a boolean to enable/disable, a static table (`{{ label = "<label>", url = "<url>" }, ...}`, or a function(buffer: string, repo_url: string|nil): table)
 	file_assets         = {},                         
 	-- Custom file asset definitions keyed by file names and extensions (see default config at `lua/presence/file_assets.lua` for reference)
-	show_time           = false,                       
+	show_time           = true,
 	-- Show the timer
 
 	-- Rich Presence text options
@@ -39,5 +39,6 @@ require("presence").setup({
 	workspace_text      = "Working on %s",            
 	-- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
 	line_number_text    = "Line %s out of %s",        
-	-- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
-								})
+	-- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)							
+	})
+

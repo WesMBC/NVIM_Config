@@ -27,7 +27,7 @@ require("neo-tree").setup({
             highlight = "NeoTreeIndentMarker",
             -- expander config, needed for nesting files
             with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
-            expander_collapsed = ">",
+            expander_collapsed = "",   
             expander_expanded = "-o>",
             expander_highlight = "NeoTreeExpander",
           },
@@ -91,7 +91,7 @@ require("neo-tree").setup({
         commands = {},
         window = {
           position = "left",
-          width = 40,
+          width = 35,
           mapping_options = {
             noremap = true,
             nowait = true,

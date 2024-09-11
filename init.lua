@@ -11,6 +11,9 @@ require("plugin.emmetnvim")
 require("plugin.presencediscord")
 require("plugin.completions")
 require("plugin.treesitter")
+require("plugin.null-ls")
+require("plugin.fromatter")
+require("plugin.prettier")
 vim.opt.number = true
 vim.opt.wrap = true
 vim.opt.splitkeep = 'screen'
@@ -24,9 +27,6 @@ vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = 'number'
 vim.opt.termguicolors = true
-
-
-
 
 
 

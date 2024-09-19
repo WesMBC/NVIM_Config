@@ -1,4 +1,3 @@
-print("El weslingo")
 
 
 

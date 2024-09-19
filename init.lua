@@ -8,6 +8,7 @@ require("plugin.nvimcmp")
 require("plugin.lualine")
 require("plugin.neotree")
 require("plugin.emmetnvim")
+require("plugin.luasnip")
 require("plugin.presencediscord")
 require("plugin.completions")
 require("plugin.treesitter")
@@ -27,7 +28,6 @@ vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = 'number'
 vim.opt.termguicolors = true
-
 
 
 

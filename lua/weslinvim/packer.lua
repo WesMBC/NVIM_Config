@@ -36,20 +36,7 @@ return require('packer').startup(function(use)
 	use {
 		"ThePrimeagen/harpoon"
 	}
-	use {
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v3.x',
-		requires = {
-			--- Uncomment the two plugins below if you want to
-			--- manage the language servers from neovim
-			{ 'williamboman/mason.nvim' },
-			{ 'williamboman/mason-lspconfig.nvim' },
-			{ 'neovim/nvim-lspconfig' },
-			{ 'hrsh7th/nvim-cmp' },
-			{ 'hrsh7th/cmp-nvim-lsp' },
-			{ 'L3MON4D3/LuaSnip' },
-		}
-	}
+
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -76,9 +63,6 @@ return require('packer').startup(function(use)
 	use {
 		"olrtg/nvim-emmet"
 	}
-	use {
-		"hrsh7th/cmp-nvim-lsp"
-	}
 	use({
 		"L3MON4D3/LuaSnip",
 		-- follow latest release.
@@ -89,28 +73,11 @@ return require('packer').startup(function(use)
 	use {
 		"rafamadriz/friendly-snippets"
 	}
-	-- Installation
-	use {
-		'hrsh7th/nvim-cmp',
-		config = function()
-			require 'cmp'.setup {
-				snippet = {
-					expand = function(args)
-						require 'luasnip'.lsp_expand(args.body)
-					end
-				},
-
-				sources = {
-					{ name = 'luasnip' },
-					-- more sources
-				},
-			}
-		end
-	}
+	
 	use {
 		'saadparwaiz1/cmp_luasnip'
 	}
-	use('neovim/nvim-lspconfig')
+	
 
 	use('jose-elias-alvarez/null-ls.nvim')
 
@@ -129,7 +96,26 @@ return require('packer').startup(function(use)
 			"TheGLander/indent-rainbowline.nvim",
 		},
 	}
+    	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v3.x',
+		requires = {
+			--- Uncomment the two plugins below if you want to
+			--- manage the language servers from neovim
+			{ 'williamboman/mason.nvim' },
+			{ 'williamboman/mason-lspconfig.nvim' },
+			{ 'neovim/nvim-lspconfig' },
+			{ 'hrsh7th/nvim-cmp' },
+			{ 'hrsh7th/cmp-nvim-lsp' },
+			{ 'L3MON4D3/LuaSnip' },
+		}
+	}
 
+	use {	'neovim/nvim-lspconfig'
+	}
+	use {
+		"hrsh7th/cmp-nvim-lsp"
+	}
 	use {
 		'hrsh7th/cmp-buffer'
 	}

@@ -3,12 +3,16 @@ require("weslinvim.packer")
 require("config.colorselect")
 require("plugin.telescope")
 require("plugin.harpoon")
+
 require("plugin.lsp")
+
 require("plugin.nvimcmp")
+require("plugin.luasnip")
+
+
 require("plugin.lualine")
 require("plugin.neotree")
 require("plugin.emmetnvim")
-require("plugin.luasnip")
 require("plugin.presencediscord")
 require("plugin.treesitter")
 require("plugin.null-ls")

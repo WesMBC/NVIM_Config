@@ -3,6 +3,7 @@ return{
     --mason
     "mason-org/mason.nvim",
     opts = {},
+    lazy = false;
 
     config = function()
         local config = require("mason")

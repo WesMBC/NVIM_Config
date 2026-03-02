@@ -6,6 +6,7 @@ return {
 		"MunifTanjim/nui.nvim",
 		"nvim-tree/nvim-web-devicons", -- optional, but recommended
 	},
+  lazy = true,
 	config = function()
 		--configuracion de un commandos
 		vim.keymap.set("n", "<leader>m", ":Neotree<cr>", {})
